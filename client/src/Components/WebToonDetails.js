@@ -13,7 +13,7 @@ function WebtoonDetail() {
     // Fetch webtoon details from the backend using the ID
     const fetchWebtoonDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/webtoons/${id}`);
+        const response = await axios.get(`https://backend-r9ii.onrender.com/api/webtoons/${id}`);
         setWebtoon(response.data); // Set webtoon data
       } catch (err) {
         setError(err.response ? err.response.data.message : 'Failed to fetch webtoon details');

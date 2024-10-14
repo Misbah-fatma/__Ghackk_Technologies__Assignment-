@@ -26,7 +26,7 @@ const Favorites = () => {
     // Fetch the user's favorite webtoons from the backend using Axios
     const fetchFavorites = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/favourites/details`);
+        const response = await axios.get(`https://backend-r9ii.onrender.com/api/favourites/details`);
         const data = response.data;
 
         console.log("Fetched favorites:", data);  // Log the response data to check its structure
