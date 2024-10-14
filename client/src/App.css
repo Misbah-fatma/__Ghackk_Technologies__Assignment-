@@ -1,0 +1,266 @@
+.hero__items {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  filter: brightness(1.5) contrast(1); 
+}
+
+.hero__text-container {
+  position: absolute;
+  top: 75%;
+ 
+  transform: translateY(-50%);
+  color: white;
+  z-index: 2; /* Make sure text is on top */
+}
+
+.hero__text-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: aliceblue;
+}
+
+.hero__text-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+.hero__text-container a {
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+.hero__items::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay to darken the background */
+  z-index: 1;
+}
+
+
+.hero__text-container a span {
+font-size: 13px;
+color: #ffffff;
+background: #e53637;
+display: inline-block;
+font-weight: 700;
+letter-spacing: 2px;
+text-transform: uppercase;
+padding: 14px 20px;
+border-radius: 4px 0 0 4px;
+margin-right: 1px;
+}
+
+.hero__text-container a span i {
+  font-size: 20px !important;
+  display: inline-block;
+  background-color: #e53637 !important;
+  padding: 11px 5px 16px 8px !important;
+  color: #ffffff !important;
+  border-radius: 0 4px 4px 0 !important;
+}
+
+.hero__text-container .label {
+font-size: 13px;
+    color: #e53637;
+    background: #ffffff;
+    padding: 5px 14px 3px;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+}
+
+.product__item__text p {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;  /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: calc(1.2em * 6); /* Adjust line height to ensure 6 lines */
+  line-height: 1.2em;      /* Adjust line height to control space between lines */
+}
+
+.owl-dots {
+  bottom: 50px !important; /* Adjust the value to move dots upwards */
+  position: absolute;
+  left: 50%;
+}
+
+.normal-breadcrumb {
+  position: relative;
+}
+
+.normal-breadcrumb img {
+  width: 100%;
+  height: auto;
+}
+
+.normal__breadcrumb__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.normal__breadcrumb__text h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.normal__breadcrumb__text p {
+  font-size: 18px;
+}
+
+.heart-icon {
+    position: absolute;
+    font-size: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: #e74c3c;
+    z-index: 10;
+}
+
+.float-heart {
+    font-size: 30px;
+    opacity: 1;
+    animation: float 1s ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-50px) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+.like-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.like-btn .fa-heart {
+    font-size: 20px;
+    color: #d3d3d3;
+}
+
+.like-btn .fa-heart.liked {
+    color: #e74c3c;
+}
+.product__item__pic {
+  position: relative;
+}
+
+.like-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.like-button.active {
+  color: #e74c3c; /* Red color for active like */
+}
+
+.heart-float {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #e74c3c;
+  animation: float 1s ease-in-out;
+  pointer-events: none;
+  opacity: 0;
+}
+
+@keyframes float {
+  0% {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 1;
+  }
+  100% {
+      transform: translate(-50%, -150%) scale(1.5);
+      opacity: 0;
+  }
+}
+
+.button-73 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 20em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: .5rem 1rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+.button-container {
+  text-align: center; /* Center the button horizontally */
+  margin-top: 20px; /* Optional: Add some margin from the top */
+}
+
+
+.custom-navbar {
+  background-color: black !important; /* Use !important to override Bootstrap */
+}
+
+
+/* Make the hamburger icon white */
+.custom-toggler {
+  border-color: rgba(255, 255, 255, 0.8); /* White border */
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /* Custom white lines for the hamburger icon */
+}
